@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: github-actions
+  directory: "/repositorys"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  target-branch: wanniewinnz-patch-1
+- package-ecosystem: github-actions
+  directory: "/repositorys/.github/workflows/<anything>.yml."
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
